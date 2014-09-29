@@ -1,0 +1,5 @@
+<% @items.each do |item| %>
+  <p><%= item.title %></p>
+  <p><%= item.description %></p>
+  <p><%= link_to "View Item", item_path(item), id: "item-#{item.id}" %></p>
+<% end %>
